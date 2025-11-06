@@ -87,7 +87,7 @@
                       <ul class="dropdown-menu">
                         <li class="dropdown sbmenu"><a href="#">Désinsectisation <b class="caret1"></b></a>
 
-                          <ul class="dropdown-menu" role="menu">
+                          <ul class="dropdown-menu" role="menu" style="margin-left: -10px !important;" >
 
                             <li class="dropdown">
 
@@ -286,6 +286,24 @@
   </div>
 </header>
 
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop(); // e.g. 'accueil.html'
+    const navLinks = document.querySelectorAll("nav ul.menu-top li a");
+
+    navLinks.forEach(link => {
+      const linkPath = link.getAttribute("href").replace("./", "");
+      if (linkPath === currentPath) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  });
+</script>
+
+
   
 
 
@@ -327,7 +345,7 @@
               <input type="hidden" name="type" value="devis" />
               <input type="hidden" name="firstName" value="" />
               <input type="hidden" name="redirectUrl" value="/message-envoye" />
-              <input type="hidden" name="key" value="6LcPV8crAAAAAHwlBeXBfgjNsZOLFERnf0AJp6rq" />
+              <input type="hidden" name="key" value="6LdawQQsAAAAAD8lPBK-MnOGO3bK5crh7Yi4UWxV" />
               <input type="hidden" name="website" value="" />
               <div class="row">
                 <div class="col-sm-12">
@@ -423,7 +441,7 @@
                 <i class="fa fa-info-square" aria-hidden="true"></i>
               </div>
               <div class="form-group d-flex justify-content-center">
-                <div class="g-recaptcha" data-sitekey="6LcPV8crAAAAAANZKefmyeL_9fIqbKgeTWZ9ECWm"></div>
+                <div class="g-recaptcha" data-sitekey="6LdawQQsAAAAANerEyr8_xyTcPnRmJ2EytIFwMNB"></div>
                 <br />
                 <div id="devis-form-response"></div>
               </div>
@@ -493,7 +511,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-6 text-left">
-        <img src="./assets/img/logo.png" class="img-responsive inline-block" alt="logo 123 nuisibles">
+        <img src="./assets/img/logo.png" class="img-responsive footer-logo" alt="logo 123 nuisibles">
         <br><br>
         <ul class="social contact-wrapper">
           <li><a href="https://www.facebook.com/123Nuisibles/" target="_blank"
@@ -578,6 +596,11 @@
           <li>
             <a class="" href="./devis.html">Devis</a>
           </li>
+          <li>
+            <a class="" href="./nos-actualites.html">Nos actualités</a>
+          </li>
+
+          
 
         </ul>
       </div>

@@ -40,8 +40,8 @@
     addTitleToLinks();
   </script>
 
-  <title>Dératisation Essonne | 123 Nuisibles | {{site.data.company.phone}}</title>
-<meta property="og:title" content="Dératisation Essonne | 123 Nuisibles | {{site.data.company.phone}}" />
+  <title>Dératisation Essonne | 123 Nuisibles | 06 60 65 88 11</title>
+<meta property="og:title" content="Dératisation Essonne | 123 Nuisibles | 06 60 65 88 11" />
 <meta property="og:locale" content="fr_FR" />
 <meta name="description" content="123 Nuisibles, le spécialiste de la dératisation en Essonne ! Pour tout vos urgence de dératisation ou de désinfection, faites vite appel à nos experts." />
 <meta property="og:description" content="123 Nuisibles, le spécialiste de la dératisation en Essonne ! Pour tout vos urgence de dératisation ou de désinfection, faites vite appel à nos experts." />
@@ -56,7 +56,7 @@
 "@type":"WebSite",
 "url":"http://localhost:4000/",
 "description":"123 Nuisibles, le spécialiste de la dératisation en Essonne ! Pour tout vos urgence de dératisation ou de désinfection, faites vite appel à nos experts.",
-"name":"Dératisation Essonne | 123 Nuisibles | {{site.data.company.phone}}"
+"name":"Dératisation Essonne | 123 Nuisibles | 06 60 65 88 11"
 }
 </script>
 
@@ -87,7 +87,7 @@
                       <ul class="dropdown-menu">
                         <li class="dropdown sbmenu"><a href="#">Désinsectisation <b class="caret1"></b></a>
 
-                          <ul class="dropdown-menu" role="menu">
+                          <ul class="dropdown-menu" role="menu" style="margin-left: -10px !important;" >
 
                             <li class="dropdown">
 
@@ -286,6 +286,24 @@
   </div>
 </header>
 
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop(); // e.g. 'accueil.html'
+    const navLinks = document.querySelectorAll("nav ul.menu-top li a");
+
+    navLinks.forEach(link => {
+      const linkPath = link.getAttribute("href").replace("./", "");
+      if (linkPath === currentPath) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  });
+</script>
+
+
   
   <div class="bandeau wow fadeIn" data-wow-duration="1s" data-wow-delay="0">
   <div class="container baseline">
@@ -320,300 +338,301 @@
 
 
   <div class="">
-      <div class="content-wrap">
-    <section class="one wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <!-- <form role="form" method="post" action="#carousel-header" class="p20" > -->
+    <div class="content-wrap">
+  <section class="one wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <!-- <form role="form" method="post" action="#carousel-header" class="p20" > -->
 
-              <form class="form contact_content-form" id="contactForm" method="post"
-              action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
-              <input type="hidden" name="lang" value="fr" />
-              <input type="hidden" name="redirectUrl" value="/message-envoye" />
-              <input type="hidden" name="type" value="contact" />
-              <input type="hidden" name="website" value="" />
-              <input type="hidden" name="lang" value="fr" />
-              <input type="hidden" name="firstName" value="" />
-              <input type="hidden" name="key" value="6LcPV8crAAAAAHwlBeXBfgjNsZOLFERnf0AJp6rq" />
-              <div class="row pre-reservation pb-20">
-                <div class="col-sm-12">
-                  <h2><strong>Devis</strong> gratuit</h2>
+          <form class="form contact_content-form" id="contactForm" method="post"
+            action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
+            <input type="hidden" name="lang" value="fr" />
+            <input type="hidden" name="redirectUrl" value="/message-envoye" />
+            <input type="hidden" name="type" value="contact" />
+            <input type="hidden" name="website" value="" />
+            <input type="hidden" name="lang" value="fr" />
+            <input type="hidden" name="firstName" value="" />
+            <input type="hidden" name="key" value="6LdawQQsAAAAAD8lPBK-MnOGO3bK5crh7Yi4UWxV" />
+            <div class="row pre-reservation pb-20">
+              <div class="col-sm-12">
+                <h2><strong>Devis</strong> gratuit</h2>
+              </div>
+              <div class="col-md-3 col-sm-6 clabel">
+                <div class=" padl form-group has-feedback ">
+                  <div class="user ico2"></div>
+                  <input type="text" name="name" id="form_nom" value="" class="form-control " placeholder="Nom"
+                    required="required">
                 </div>
-                <div class="col-md-3 col-sm-6 clabel">
-                  <div class=" padl form-group has-feedback ">
-                    <div class="user ico2"></div>
-                    <input type="text" name="name" id="form_nom" value="" class="form-control " placeholder="Nom"
-                      required="required">
-                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6 clabel">
+                <div class=" padl form-group has-feedback ">
+                  <div class="email ico2"></div>
+                  <input type="email" name="email" id="form_email" value="" class="form-control " placeholder="Email"
+                    required="required">
                 </div>
-                <div class="col-md-3 col-sm-6 clabel">
-                  <div class=" padl form-group has-feedback ">
-                    <div class="email ico2"></div>
-                    <input type="email" name="email" id="form_email" value="" class="form-control " placeholder="Email"
-                      required="required">
-                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6 clabel">
+                <div class="form-group has-feedback ">
+                  <div class="phone ico2"></div>
+                  <input type="text" name="telephone" id="form_telephone" value="" class="form-control"
+                    placeholder="Tél" required="required">
                 </div>
-                <div class="col-md-3 col-sm-6 clabel">
-                  <div class="form-group has-feedback ">
-                    <div class="phone ico2"></div>
-                    <input type="text" name="telephone" id="form_telephone" value="" class="form-control"
-                      placeholder="Tél" required="required">
-                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="form-group has-feedback ">
+                  <div class="question ico2"></div>
+                  <select name="subject" required="" class="form-control" id="subject">
+                    <option value="">Prestation:</option>
+                    <option value="frelons-guepes">Frelons / Guêpes</option>
+                    <option value="chenilles-processionnaires">Chenilles processionnaires</option>
+                    <option value="punaises-de-lit">Punaises de lit</option>
+                    <option value="puces">Puces</option>
+                    <option value="cafards-mites">Cafards / Mites</option>
+                    <option value="fourmis">Fourmis</option>
+                    <option value="rats-souris">Rats / Souris</option>
+                  </select>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="form-group has-feedback ">
-                    <div class="question ico2"></div>
-                    <select name="subject" required="" class="form-control" id="subject">
-                      <option value="">Prestation:</option>
-                      <option value="frelons-guepes">Frelons / Guêpes</option>
-                      <option value="chenilles-processionnaires">Chenilles processionnaires</option>
-                      <option value="punaises-de-lit">Punaises de lit</option>
-                      <option value="puces">Puces</option>
-                      <option value="cafards-mites">Cafards / Mites</option>
-                      <option value="fourmis">Fourmis</option>
-                      <option value="rats-souris">Rats / Souris</option>                      
-                    </select>
-                  </div>
-                </div>
+              </div>
 
-                <div class="col-sm-12">
-                  <div class="checkbox d-flex  justify-content-center">
+              <div class="col-sm-12">
+                <div class="to-center-col">
+                  <div class="checkbox">
                     <input name="condition" type="checkbox"
                       style="height:1.5rem; width:1.5rem; vertical-align: middle; margin-right: 1rem;" />
                     <span class="contact_content-form--label" style="font-size: 1.4rem; color: #fff;">
                       En utilisant ce formulaire, vous acceptez le stockage et la gestion
-                      de vos données par ce site * <a href="#" data-toggle="modal" class="link" data-target="#modal-rgpd"></a></span>
+                      de vos données par ce site * <a href="#" data-toggle="modal" class="link"
+                        data-target="#modal-rgpd"></a></span>
                     <i class="fa fa-info-square" aria-hidden="true"></i>
                   </div>
-
                   <div id="contact-form-response"></div>
                   <div class="form-group">
-                    <div class="g-recaptcha" data-sitekey="6LcPV8crAAAAAANZKefmyeL_9fIqbKgeTWZ9ECWm">
+                    <div class="g-recaptcha" data-sitekey="6LdawQQsAAAAANerEyr8_xyTcPnRmJ2EytIFwMNB">
                     </div>
                     <br />
                     <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
                   </div>
-  
                 </div>
+              </div>
 
-
-
-                <div class="col-md-3 col-sm-12 text-center">
+                <div class="col-md-12 col-sm-12 text-center to-center-col">
                   <button id="bouton-envoyer-home" type="submit" name="devis" class="button2 btn-form form-submit">
                     <span class="txt">Envoyer</span>
                   </button>
                 </div>
-              </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="one wow fadeIn no-padding-top" data-wow-duration="1.5s" data-wow-delay="0.3s">
-      <div class="container">
-        <div class="row">
+  <section class="one wow fadeIn no-padding-top" data-wow-duration="1.5s" data-wow-delay="0.3s">
+    <div class="container">
+      <div class="row">
 
-          <div class="col-sm-12">
-            <h2>Avec nos <b>professionnels de dératisation</b> dans le département de l’Essonne, soyez certain de vous
-              débarrasser des nuisibles rapidement</h2>
-          </div>
-          <div class="col-sm-7">
+        <div class="col-sm-12">
+          <h2>Avec nos <b>professionnels de dératisation</b> dans le département de l’Essonne, soyez certain de vous
+            débarrasser des nuisibles rapidement</h2>
+        </div>
+        <div class="col-sm-7">
 
-            <p>Vous êtes une entreprise ou peut-être un particulier&thinsp;? Et vous avez remarqué des traces de
-              nuisibles à l’intérieur de votre maison, nous trouverons la solution à vos problèmes et par la suite vous
-              donnerons des conseils pour éviter le retour de ces derniers. En tant que propriétaire et employé de ma
-              propre <strong>entreprise de dératisation dans le département de l’Essonne</strong>, je mets en avant les
-              exigences de mes clients tout en respectant le bien-être de l’environnement.</p>
+          <p>Vous êtes une entreprise ou peut-être un particulier&thinsp;? Et vous avez remarqué des traces de
+            nuisibles à l’intérieur de votre maison, nous trouverons la solution à vos problèmes et par la suite vous
+            donnerons des conseils pour éviter le retour de ces derniers. En tant que propriétaire et employé de ma
+            propre <strong>entreprise de dératisation dans le département de l’Essonne</strong>, je mets en avant les
+            exigences de mes clients tout en respectant le bien-être de l’environnement.</p>
 
-            <p> Nos services de <strong>dératisation en Essonne</strong> ont pour mission d’éliminer et de prévenir
-              l’apparition de nuisibles sur diverses surfaces et zones à traiter. Les produits employés par notre équipe
-              respectent toutes les réglementations en vigueur ainsi que les normes imposées par le ministère de
-              l’Environnement. Dans les cas d’urgences ou en prévention pour un diagnostic, nous nous déplaçons vers
-              vous. Nous procédons à un état des lieux afin d’établir le traitement adéquat à la situation pour vous
-              débarrasser de tout type de nuisibles.</p>
+          <p> Nos services de <strong>dératisation en Essonne</strong> ont pour mission d’éliminer et de prévenir
+            l’apparition de nuisibles sur diverses surfaces et zones à traiter. Les produits employés par notre équipe
+            respectent toutes les réglementations en vigueur ainsi que les normes imposées par le ministère de
+            l’Environnement. Dans les cas d’urgences ou en prévention pour un diagnostic, nous nous déplaçons vers
+            vous. Nous procédons à un état des lieux afin d’établir le traitement adéquat à la situation pour vous
+            débarrasser de tout type de nuisibles.</p>
 
-            <h2>Faites appel aux services de dératisation Essonne</h2>
+          <h2>Faites appel aux services de dératisation Essonne</h2>
 
-            <blockquote>Dites adieu aux nuisibles pour de bon, contactez- nous maintenant</blockquote>
-          </div>
-          <div class="col-sm-5">
-            <img src="./assets/img/PJ_7.jpg" class="img-responsive" alt="homme qui travaille sur un arbre"
-              style="width:100%; height:420px; object-fit:cover" loading="lazy">
-          </div>
+          <blockquote>Dites adieu aux nuisibles pour de bon, contactez- nous maintenant</blockquote>
+        </div>
+        <div class="col-sm-5">
+          <img src="./assets/img/PJ_7.jpg" class="img-responsive" alt="homme qui travaille sur un arbre"
+            style="width:100%; height:420px; object-fit:cover" loading="lazy">
         </div>
       </div>
-    </section>
-    <section class="one bggrey services">
-      <div class="container">
-        <div class="row wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
-          <div class="col-sm-12 text-center">
-            <h2>Nos<b> prestations</b></h2>
+    </div>
+  </section>
+  <section class="one bggrey services">
+    <div class="container">
+      <div class="row wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
+        <div class="col-sm-12 text-center">
+          <h2>Nos<b> prestations</b></h2>
 
-            <!-- <a href="./devis.html" class="button2">
+          <!-- <a href="./devis.html" class="button2">
         <span class="txt">Devis gratuit</span>
       </a> -->
-            <div class="separator"></div>
+          <div class="separator"></div>
+        </div>
+      </div>
+      <div class="row prestation3">
+
+        <div class="col-md-6">
+          <div class="benefits">
+            <span class="ico">
+              <div class="rat"></div>
+            </span>
+            <div class="texte">
+              <h3>Traitements des rats et des souris</h3>
+              <p>Lors de passage de rongeurs près de la maison ou à l’intérieur des bâtiments, le pourcentage de
+                risques d’objets endommagés est très important, sans oublier les risques d’apparition de maladie dont
+                ils peuvent être les vecteurs. Suivant la zone et la situation, nous proposons plusieurs traitements
+                pour vous débarrasser au plus vite de ces rongeurs, et prévenir leur apparition.</p>
+
+              <div class="text-center"> <a href="./rats-souris.html" class="button1 wow zoomIn" data-wow-duration="1.5s"
+                  data-wow-delay="0.3s">
+                  <span class="txt">Lire <span>la suite</span></span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row prestation3">
 
-          <div class="col-md-6">
-            <div class="benefits">
-              <span class="ico">
-                <div class="rat"></div>
-              </span>
-              <div class="texte">
-                <h3>Traitements des rats et des souris</h3>
-                <p>Lors de passage de rongeurs près de la maison ou à l’intérieur des bâtiments, le pourcentage de
-                  risques d’objets endommagés est très important, sans oublier les risques d’apparition de maladie dont
-                  ils peuvent être les vecteurs. Suivant la zone et la situation, nous proposons plusieurs traitements
-                  pour vous débarrasser au plus vite de ces rongeurs, et prévenir leur apparition.</p>
+        <div class="col-md-6">
+          <div class="benefits">
+            <span class="ico">
+              <div class="insect"></div>
+            </span>
+            <div class="texte">
+              <h3>Traitements des punaises</h3>
+              <p>La punaise est un insecte qui peut élire domicile chez vous. Nous vous recommandons de vite faire
+                appel à un professionnel pour vous en débarrasser et ainsi éviter des désagréments dans votre
+                entreprise ou maison. Le cycle de développement des punaises est rapide, les insecticides normaux
+                n’ont aucun effet sur ces derniers. Faites appel à notre équipe pour vous débarrasser d’elles en un
+                claquement de doigts.</p>
 
-                <div class="text-center"> <a href="./rats-souris.html" class="button1 wow zoomIn" data-wow-duration="1.5s"
-                    data-wow-delay="0.3s">
-                    <span class="txt">Lire <span>la suite</span></span>
-                  </a>
-                </div>
+              <div class="text-center"> <a href="./punaises-de-lit.html" class="button1 wow zoomIn"
+                  data-wow-duration="1.5s" data-wow-delay="0.3s">
+                  <span class="txt">Lire <span>la suite</span></span>
+                </a>
               </div>
             </div>
           </div>
-
-          <div class="col-md-6">
-            <div class="benefits">
-              <span class="ico">
-                <div class="insect"></div>
-              </span>
-              <div class="texte">
-                <h3>Traitements des punaises</h3>
-                <p>La punaise est un insecte qui peut élire domicile chez vous. Nous vous recommandons de vite faire
-                  appel à un professionnel pour vous en débarrasser et ainsi éviter des désagréments dans votre
-                  entreprise ou maison. Le cycle de développement des punaises est rapide, les insecticides normaux
-                  n’ont aucun effet sur ces derniers. Faites appel à notre équipe pour vous débarrasser d’elles en un
-                  claquement de doigts.</p>
-
-                <div class="text-center"> <a href="./punaises-de-lit.html" class="button1 wow zoomIn" data-wow-duration="1.5s"
-                    data-wow-delay="0.3s">
-                    <span class="txt">Lire <span>la suite</span></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
-
-        <div class="row prestation3">
-
-          <div class="col-md-6">
-            <div class="benefits">
-              <span class="ico">
-                <div class="nettoyage"></div>
-              </span>
-              <div class="texte">
-                <h3>Traitements contre les blattes/fourmis/mites</h3>
-                <p>Dans le top&nbsp;3 des nuisibles en France, l’invasion de ces insectes est très commune. Sa
-                  propagation est rapide, vous n’aurez aucun mal à noter sa présence dans votre maison ou dans votre
-                  entreprise. Si vous n’arrivez pas à vous en débarrasser avec des insecticides normaux, notre société
-                  d’élimination de nuisibles se déplace vers vous afin de traiter de manière efficace et définitive les
-                  cafards et les blattes qui logent chez vous. Par contre, les fourmis sont naturellement présentes dans
-                  les jardins et sortent habituellement au printemps, donc, quand faut-il s’inquiéter de voir des
-                  fourmis dans sa maison&thinsp;? Lorsque vous notez une quantité anormale de fourmis dans votre maison,
-                  il est probable que les fourmis aient fait leur nid à l’intérieur de votre maison et s’y développent
-                  de façon anarchique et que leur nid se trouve à l’intérieur. </p>
-                <div class="text-center">
-                  <a href="./blattes-cafard.html" class="button1 wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                    <span class="txt">Lire <span>la suite</span></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="benefits">
-              <span class="ico">
-                <div class="desinfection"></div>
-              </span>
-              <div class="texte">
-                <h3>Traitements contre les puces</h3>
-                <p>Si vous avez des animaux de compagnie ou que par hasard votre maison ou votre appartement se trouve
-                  proche d’une zone où des animaux circulent, la présence de puces est très probable. Pour vous
-                  débarrasser des puces, pensez à traiter vos animaux et à nettoyer régulièrement l’intérieur de vos
-                  locaux. Si l’invasion devient trop importante, notre équipe s’occupe de tout, et vous assure un
-                  traitement sans effet sur les occupants de la maison et sur vos animaux domestiques. </p>
-
-                <div class="text-center">
-                  <a href="./puces.html" class="button1 wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                    <span class="txt">Lire <span>la suite</span></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row prestation3">
-
-          <div class="col-md-6">
-            <div class="benefits">
-              <span class="ico">
-                <div class="ventilation"></div>
-              </span>
-              <div class="texte">
-                <h3>Traitements des guêpes et frelons</h3>
-                <p>Apparaissant au printemps, les reines fondent une colonie qui va se développer durant tout l’été
-                  jusqu’à l’automne. La guêpe et le frelon peuvent se montrer très&nbsp; agressifs lorsqu’on les dérange
-                  ou qu’on s’approche trop près de leur nid. Le frelon asiatique en plus d’être très dangereux pour
-                  l’homme et les animaux domestiques, se nourrit d’abeilles et d’autres insectes polinisateurs mettant
-                  ainsi en péril la chaine de biodiversité de nos environnements. Il est deux à trois fois plus gros que
-                  sa cousine la guêpe. Les piqûres de ces insectes sont très douloureuses pour l’homme et peuvent
-                  provoquer des allergies ou des chocs anaphylactiques mortels. Si vous découvrez un nid ou observez des
-                  allers retours d’insectes vers un point fixe, nous vous conseillons de tout de suite appeler un
-                  professionnel. </p>
-
-                <div class="text-center">
-                  <a href="./frelons-guepes.html" class="button1 wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                    <span class="txt">Lire <span>la suite</span></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="benefits">
-              <span class="ico">
-                <div class="pigeon"></div>
-              </span>
-              <div class="texte">
-                <h3>Traitements des chenilles processionnaires</h3>
-                <p>Très dangereuse pour l’homme ou pour les animaux, la chenille processionnaire se caractérise par ses
-                  poils urticants ne mesurant pas plus de 2 mm de long. Ses chenilles vivent dans la majorité des cas
-                  dans un arbre. Elles peuvent attaquer lorsqu’elles se sentent menacées et relâchent une substance
-                  extrêmement allergène qui est la thaumétopoéïne. Nous traitons ces nuisibles avec un traitement bio
-                  pour l’éradiquer.</p>
-
-                <div class="text-center">
-                  <a href="./chenilles-processionnaires.html" class="button1 wow zoomIn" data-wow-duration="1.5s"
-                    data-wow-delay="0.3s">
-                    <span class="txt">Lire <span>la suite</span></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-
 
       </div>
 
-    </section>
-    <!-- <section class="one wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
+      <div class="row prestation3">
+
+        <div class="col-md-6">
+          <div class="benefits">
+            <span class="ico">
+              <div class="nettoyage"></div>
+            </span>
+            <div class="texte">
+              <h3>Traitements contre les blattes/fourmis/mites</h3>
+              <p>Dans le top&nbsp;3 des nuisibles en France, l’invasion de ces insectes est très commune. Sa
+                propagation est rapide, vous n’aurez aucun mal à noter sa présence dans votre maison ou dans votre
+                entreprise. Si vous n’arrivez pas à vous en débarrasser avec des insecticides normaux, notre société
+                d’élimination de nuisibles se déplace vers vous afin de traiter de manière efficace et définitive les
+                cafards et les blattes qui logent chez vous. Par contre, les fourmis sont naturellement présentes dans
+                les jardins et sortent habituellement au printemps, donc, quand faut-il s’inquiéter de voir des
+                fourmis dans sa maison&thinsp;? Lorsque vous notez une quantité anormale de fourmis dans votre maison,
+                il est probable que les fourmis aient fait leur nid à l’intérieur de votre maison et s’y développent
+                de façon anarchique et que leur nid se trouve à l’intérieur. </p>
+              <div class="text-center">
+                <a href="./blattes-cafard.html" class="button1 wow zoomIn" data-wow-duration="1.5s"
+                  data-wow-delay="0.3s">
+                  <span class="txt">Lire <span>la suite</span></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="benefits">
+            <span class="ico">
+              <div class="desinfection"></div>
+            </span>
+            <div class="texte">
+              <h3>Traitements contre les puces</h3>
+              <p>Si vous avez des animaux de compagnie ou que par hasard votre maison ou votre appartement se trouve
+                proche d’une zone où des animaux circulent, la présence de puces est très probable. Pour vous
+                débarrasser des puces, pensez à traiter vos animaux et à nettoyer régulièrement l’intérieur de vos
+                locaux. Si l’invasion devient trop importante, notre équipe s’occupe de tout, et vous assure un
+                traitement sans effet sur les occupants de la maison et sur vos animaux domestiques. </p>
+
+              <div class="text-center">
+                <a href="./puces.html" class="button1 wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                  <span class="txt">Lire <span>la suite</span></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row prestation3">
+
+        <div class="col-md-6">
+          <div class="benefits">
+            <span class="ico">
+              <div class="ventilation"></div>
+            </span>
+            <div class="texte">
+              <h3>Traitements des guêpes et frelons</h3>
+              <p>Apparaissant au printemps, les reines fondent une colonie qui va se développer durant tout l’été
+                jusqu’à l’automne. La guêpe et le frelon peuvent se montrer très&nbsp; agressifs lorsqu’on les dérange
+                ou qu’on s’approche trop près de leur nid. Le frelon asiatique en plus d’être très dangereux pour
+                l’homme et les animaux domestiques, se nourrit d’abeilles et d’autres insectes polinisateurs mettant
+                ainsi en péril la chaine de biodiversité de nos environnements. Il est deux à trois fois plus gros que
+                sa cousine la guêpe. Les piqûres de ces insectes sont très douloureuses pour l’homme et peuvent
+                provoquer des allergies ou des chocs anaphylactiques mortels. Si vous découvrez un nid ou observez des
+                allers retours d’insectes vers un point fixe, nous vous conseillons de tout de suite appeler un
+                professionnel. </p>
+
+              <div class="text-center">
+                <a href="./frelons-guepes.html" class="button1 wow zoomIn" data-wow-duration="1.5s"
+                  data-wow-delay="0.3s">
+                  <span class="txt">Lire <span>la suite</span></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="benefits">
+            <span class="ico">
+              <div class="pigeon"></div>
+            </span>
+            <div class="texte">
+              <h3>Traitements des chenilles processionnaires</h3>
+              <p>Très dangereuse pour l’homme ou pour les animaux, la chenille processionnaire se caractérise par ses
+                poils urticants ne mesurant pas plus de 2 mm de long. Ses chenilles vivent dans la majorité des cas
+                dans un arbre. Elles peuvent attaquer lorsqu’elles se sentent menacées et relâchent une substance
+                extrêmement allergène qui est la thaumétopoéïne. Nous traitons ces nuisibles avec un traitement bio
+                pour l’éradiquer.</p>
+
+              <div class="text-center">
+                <a href="./chenilles-processionnaires.html" class="button1 wow zoomIn" data-wow-duration="1.5s"
+                  data-wow-delay="0.3s">
+                  <span class="txt">Lire <span>la suite</span></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </section>
+  <!-- <section class="one wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
 <div class="container">
   <div class="row">
     <div class="col-sm-12 text-center">
@@ -638,149 +657,150 @@
   </div>
 </div>
 </section> -->
-    <section class="one bgPrimary cta-devis">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8">
-            <h2>Retrouvez un quotidien propre et sain grâce à la dératisation</h2>
-            <p>Les nuisibles se présentent sous différentes formes (insectes, rongeurs), déterminer la méthode adaptée
-              pour chacune d’elle est notre métier&thinsp;</p>
-          </div>
-          <div class="col-sm-4">
-            <a href="./devis.html" class="button6 wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
-              <span class="txt">Demandez votre <span>devis</span></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="one wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
-
-      <div class="container">
-        <div class="row">
-          <div id="paragraphe-horaire-ouverture" class="col-sm-6">
-            <h2>Dératisation dans le département de l’Essonne, service d’urgence disponible 24&nbsp;h/24</h2>
-            <p>Contactez-nous au <a href="tel:0660658811">06 60 65 88 11</a></p>
-            <h2>Nos horaires d’ouvertures</h2>
-            <p>Fixez un rendez-vous auprès de votre spécialiste en <strong>dératisation dans l’Essonne</strong> et
-              n’hésitez pas à nous appeler dans les cas d’urgences</p>
-            <p>Lundi au dimanche&nbsp;: 7h – 21h</p>
-            <h2>Prenez garde à ces nuisibles</h2>
-            <ul class="list2">
-              <li>Dératiseurs professionnels</li>
-              <li>De nombreux contrats</li>
-              <li>Plusieurs années d’expériences</li>
-              <li>Agréé par Certibiocide</li>
-              <li>Des centaines de maisons traitées depuis des années</li>
-            </ul>
-          </div>
-          <div class="col-sm-6">
-            <img src="./assets/img/PJ_8.jpg" class="img-responsive" alt="désinfection intérieure"
-              style="width:100%; height:650px; object-fit:cover" loading="lazy">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="one bggrey services">
-      <div class="container">
-        <h2>Dératisation dans l’Essonne, artisan et professionnel</h2>
-        <div class="row div-home-page">
-          <h3>Nos engagements</h3>
-          <div class="col-md-4">
-            <h4>Service professionnel avec dératisation dans l’Essonne</h4>
-            <p>Parce qu’une invasion peut très vite dégénérer, notre équipe se tient prête à vous servir. Nous
-              garantissons un service client de qualité. Chaque étape des interventions vous sera expliquée avant d’être
-              entreprise. En tant que professionnel certifié, je possède les licences nécessaires pour assurer un
-              service de qualité.</p>
-          </div>
-          <div class="col-md-4">
-            <h4>Produits respectueux de l’environnement</h4>
-            <p>Très soucieux de l’environnement qui nous entoure, notre entreprise met en avant des produits respectueux
-              de l’environnement n’ayant aucune incidence sur la santé de l’homme ou des animaux domestiques. Nos
-              compétences de professionnel ont été attestées efficaces, efficientes et sécurisées dans l’élaboration de
-              pesticides conformes aux normes en vigueur. </p>
-          </div>
-          <div class="col-md-4">
-            <h4>Garantie de l’efficacité de nos traitements</h4>
-            <p>Avec nos traitements, soyez sûre d’être débarrassé des invasions de nuisibles en tout genre. <strong>La
-                dératisation dans l’Essonne est garantie efficace et de qualité</strong>. Suivant les cas, nous mettons
-              en place un contrat de prévention dans le but de vous permettre d’éviter une invasion ou des dégâts
-              matériels dus aux proliférations de nuisibles.</p>
-          </div>
-        </div>
-        <div class="row div-home-page">
-          <div class="col-md-6">
-            <h3>A propos de nous</h3>
-            <p>Fondée par un ancien sapeur-pompier, cette reconversion a été choisie afin d’aider la population à se
-              débarrasser des nuisibles tout en respectant l’environnement. En effet, afin d’associer protection de
-              l’environnement et tranquillité des habitants, nous avons voulu contribuer à notre manière à ces deux
-              objectifs. Nous avons pour cela, obtenu toutes les certifications nécessaires pour exercer le métier de
-              dératiseur dans les normes et règles en vigueur.</p>
-          </div>
-          <div class="col-md-6">
-            <h3>Nos plus</h3>
-            <ul class="list1">
-              <li>Nous sommes une société d’artisan qui met en valeur la protection de l’environnement tout en
-                garantissant le bien être des habitants. </li>
-              <li>Notre entreprise opère dans tout le département de l’Essonne et dans le sud Seine-et-Marne. Notre
-                équipe se déplace vers vous afin d’établir un premier diagnostic.</li>
-              <li><strong>Nous sommes disponibles 7&nbsp;j/7 et pour les urgences.</strong></li>
-              <li>Notre artisan est formé et certifié et travaille avec des produits de qualité.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row div-home-page">
-          <div class="col-md-6">
-            <h2>Déroulement du processus de dératisation</h2>
-            <p><strong>Les différentes étapes de dératisation dans l’Essonne</strong>, notre société de dératisation
-              passent par ces étapes&nbsp;:</p>
-            <ul class="list1">
-              <li><strong>Établissement d’un diagnostic et analyses rapides et gratuites</strong></li>
-              <li>Mise en place d’une intervention adaptée et personnalisée, tout en prenant en compte vos besoins</li>
-              <li><strong>Suivi de post intervention et conseils aux clients</strong> afin d’éviter au maximum une
-                invasion répétée de nuisibles</li>
-            </ul>
-            <h2 id="appel-a-nous">qui fait appel à nous&thinsp;?</h2>
-            <p>Entreprise, syndicat, collectivité ou particulier, nous pouvons offrir nos services à tous.
-              <strong>Commencer dès aujourd’hui une vie sans nuisibles et améliorer votre qualité de vie</strong>.
-              Faites appel à la société de dératisation dans l’Essonne.</p>
-          </div>
-          <div class="col-md-6">
-            <img src="./assets/img/PJ_9.jpg" class="img-responsive" alt="ruche"
-              style="width:100%; height:500px; object-fit:cover" loading="lazy">
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <section class="one wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
+  <section class="one bgPrimary cta-devis">
     <div class="container">
       <div class="row">
-        <div class="col-sm-7">
-          <h2>CERTIFICATION CERTIBIOCIDE</h2>
-          <p>L’objectif de la formation du Certibiocide est de transmettre aux professionnels des informations
-            concernant l’utilisation, la vente et l’achat de certains types de produits biocides destinés à usage
-            professionnel. De plus, ce dispositif vise à assurer une utilisation durable et raisonnée des produits
-            biocides. <strong>Le Certibiocide est un certificat obtenu au terme d’une formation spécifique et délivré
-              dans un centre de formation habilité</strong> et enregistré par le ministère de l’Environnement. </p>
-          <p>Les produits qualifiés de «&thinsp;produits biocides&thinsp;» sont l’ensemble des produits créés dans le
-            but de détruire, repousser ou rendre inoffensifs des organismes nuisibles. Ces produits agissent par action
-            chimique ou biologique afin de prévenir ou de combattre l’apparition de nuisibles. </p>
+        <div class="col-sm-8">
+          <h2>Retrouvez un quotidien propre et sain grâce à la dératisation</h2>
+          <p>Les nuisibles se présentent sous différentes formes (insectes, rongeurs), déterminer la méthode adaptée
+            pour chacune d’elle est notre métier&thinsp;</p>
         </div>
-        <div class="col-sm-5">
-          <img src="./assets/img/home4.jpg" class="img-responsive" alt="larve" style="width:100%; height:250px; object-fit:cover"
-            loading="lazy">
+        <div class="col-sm-4">
+          <a href="./devis.html" class="button6 wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
+            <span class="txt">Demandez votre <span>devis</span></span>
+          </a>
         </div>
       </div>
     </div>
-
-
-
   </section>
-  <!-- <section class="one wow fadeIn bgavis" data-wow-duration="1.5s" data-wow-delay="0.3s">
+
+  <section class="one wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
+
+    <div class="container">
+      <div class="row">
+        <div id="paragraphe-horaire-ouverture" class="col-sm-6">
+          <h2>Dératisation dans le département de l’Essonne, service d’urgence disponible 24&nbsp;h/24</h2>
+          <p>Contactez-nous au <a href="tel:0660658811">06 60 65 88 11</a></p>
+          <h2>Nos horaires d’ouvertures</h2>
+          <p>Fixez un rendez-vous auprès de votre spécialiste en <strong>dératisation dans l’Essonne</strong> et
+            n’hésitez pas à nous appeler dans les cas d’urgences</p>
+          <p>Lundi au dimanche&nbsp;: 7h – 21h</p>
+          <h2>Prenez garde à ces nuisibles</h2>
+          <ul class="list2">
+            <li>Dératiseurs professionnels</li>
+            <li>De nombreux contrats</li>
+            <li>Plusieurs années d’expériences</li>
+            <li>Agréé par Certibiocide</li>
+            <li>Des centaines de maisons traitées depuis des années</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <img src="./assets/img/PJ_8.jpg" class="img-responsive" alt="désinfection intérieure"
+            style="width:100%; height:650px; object-fit:cover" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="one bggrey services">
+    <div class="container">
+      <h2>Dératisation dans l’Essonne, artisan et professionnel</h2>
+      <div class="row div-home-page">
+        <h3>Nos engagements</h3>
+        <div class="col-md-4">
+          <h4>Service professionnel avec dératisation dans l’Essonne</h4>
+          <p>Parce qu’une invasion peut très vite dégénérer, notre équipe se tient prête à vous servir. Nous
+            garantissons un service client de qualité. Chaque étape des interventions vous sera expliquée avant d’être
+            entreprise. En tant que professionnel certifié, je possède les licences nécessaires pour assurer un
+            service de qualité.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Produits respectueux de l’environnement</h4>
+          <p>Très soucieux de l’environnement qui nous entoure, notre entreprise met en avant des produits respectueux
+            de l’environnement n’ayant aucune incidence sur la santé de l’homme ou des animaux domestiques. Nos
+            compétences de professionnel ont été attestées efficaces, efficientes et sécurisées dans l’élaboration de
+            pesticides conformes aux normes en vigueur. </p>
+        </div>
+        <div class="col-md-4">
+          <h4>Garantie de l’efficacité de nos traitements</h4>
+          <p>Avec nos traitements, soyez sûre d’être débarrassé des invasions de nuisibles en tout genre. <strong>La
+              dératisation dans l’Essonne est garantie efficace et de qualité</strong>. Suivant les cas, nous mettons
+            en place un contrat de prévention dans le but de vous permettre d’éviter une invasion ou des dégâts
+            matériels dus aux proliférations de nuisibles.</p>
+        </div>
+      </div>
+      <div class="row div-home-page">
+        <div class="col-md-6">
+          <h3>A propos de nous</h3>
+          <p>Fondée par un ancien sapeur-pompier, cette reconversion a été choisie afin d’aider la population à se
+            débarrasser des nuisibles tout en respectant l’environnement. En effet, afin d’associer protection de
+            l’environnement et tranquillité des habitants, nous avons voulu contribuer à notre manière à ces deux
+            objectifs. Nous avons pour cela, obtenu toutes les certifications nécessaires pour exercer le métier de
+            dératiseur dans les normes et règles en vigueur.</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Nos plus</h3>
+          <ul class="list1">
+            <li>Nous sommes une société d’artisan qui met en valeur la protection de l’environnement tout en
+              garantissant le bien être des habitants. </li>
+            <li>Notre entreprise opère dans tout le département de l’Essonne et dans le sud Seine-et-Marne. Notre
+              équipe se déplace vers vous afin d’établir un premier diagnostic.</li>
+            <li><strong>Nous sommes disponibles 7&nbsp;j/7 et pour les urgences.</strong></li>
+            <li>Notre artisan est formé et certifié et travaille avec des produits de qualité.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row div-home-page">
+        <div class="col-md-6">
+          <h2>Déroulement du processus de dératisation</h2>
+          <p><strong>Les différentes étapes de dératisation dans l’Essonne</strong>, notre société de dératisation
+            passent par ces étapes&nbsp;:</p>
+          <ul class="list1">
+            <li><strong>Établissement d’un diagnostic et analyses rapides et gratuites</strong></li>
+            <li>Mise en place d’une intervention adaptée et personnalisée, tout en prenant en compte vos besoins</li>
+            <li><strong>Suivi de post intervention et conseils aux clients</strong> afin d’éviter au maximum une
+              invasion répétée de nuisibles</li>
+          </ul>
+          <h2 id="appel-a-nous">qui fait appel à nous&thinsp;?</h2>
+          <p>Entreprise, syndicat, collectivité ou particulier, nous pouvons offrir nos services à tous.
+            <strong>Commencer dès aujourd’hui une vie sans nuisibles et améliorer votre qualité de vie</strong>.
+            Faites appel à la société de dératisation dans l’Essonne.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="./assets/img/PJ_9.jpg" class="img-responsive" alt="ruche"
+            style="width:100%; height:500px; object-fit:cover" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="one wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7">
+        <h2>CERTIFICATION CERTIBIOCIDE</h2>
+        <p>L’objectif de la formation du Certibiocide est de transmettre aux professionnels des informations
+          concernant l’utilisation, la vente et l’achat de certains types de produits biocides destinés à usage
+          professionnel. De plus, ce dispositif vise à assurer une utilisation durable et raisonnée des produits
+          biocides. <strong>Le Certibiocide est un certificat obtenu au terme d’une formation spécifique et délivré
+            dans un centre de formation habilité</strong> et enregistré par le ministère de l’Environnement. </p>
+        <p>Les produits qualifiés de «&thinsp;produits biocides&thinsp;» sont l’ensemble des produits créés dans le
+          but de détruire, repousser ou rendre inoffensifs des organismes nuisibles. Ces produits agissent par action
+          chimique ou biologique afin de prévenir ou de combattre l’apparition de nuisibles. </p>
+      </div>
+      <div class="col-sm-5">
+        <img src="./assets/img/home4.jpg" class="img-responsive" alt="larve"
+          style="width:100%; height:250px; object-fit:cover" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+
+
+</section>
+<!-- <section class="one wow fadeIn bgavis" data-wow-duration="1.5s" data-wow-delay="0.3s">
 <div class="container">
   <div class="row">
     <div class="col-md-12 text-center wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0">
@@ -814,7 +834,7 @@
 </div>
 </section> -->
 
-  <!-- <section class="one wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
+<!-- <section class="one wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
 <div class="container">
   <div class="row">
     <div class="col-sm-6">
@@ -831,7 +851,6 @@ permettant de manipuler et de distribuer les biocides servant à exterminer les 
   </div>
 </div>
 </section> -->
-
   </div>
 
   <div class="button-fix">
@@ -852,7 +871,7 @@ permettant de manipuler et de distribuer les biocides servant à exterminer les 
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-6 text-left">
-        <img src="./assets/img/logo.png" class="img-responsive inline-block" alt="logo 123 nuisibles">
+        <img src="./assets/img/logo.png" class="img-responsive footer-logo" alt="logo 123 nuisibles">
         <br><br>
         <ul class="social contact-wrapper">
           <li><a href="https://www.facebook.com/123Nuisibles/" target="_blank"
@@ -937,6 +956,11 @@ permettant de manipuler et de distribuer les biocides servant à exterminer les 
           <li>
             <a class="" href="./devis.html">Devis</a>
           </li>
+          <li>
+            <a class="" href="./nos-actualites.html">Nos actualités</a>
+          </li>
+
+          
 
         </ul>
       </div>
