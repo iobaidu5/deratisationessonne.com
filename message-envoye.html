@@ -63,7 +63,7 @@
 </head>
 
 <body>
-  <header>
+  <!-- <header>
   <div class="menu-wrapper">
     <div id="menu">
       <div class="container-fluid">
@@ -128,7 +128,7 @@
 
                             <li class="dropdown">
 
-                              <ul class="sub-menu" role="menu">
+                              <ul class="sub-menu sub-menu2" role="menu">
                                 <li>
                                   <a class="" href="./rats-souris.html">Rats/souris</a>
                                 </li>
@@ -138,15 +138,7 @@
                             </li>
 
                           </ul>
-
                         </li>
-                        <!--  <li><a class="" href="deratisation">Dératisation</a></li>
-          <li><a class="" href="deratisation-paris">Dératisation à paris</a></li>
-          <li><a class="" href="desinfection">Désinfection</a></li>
-          <li><a class="" href="depigeonnisation">Dépigeonnisation</a></li>
-          <li><a class="" href="vmc">Entretien VMC</a></li>
-          <li><a class="" href="nettoyage-et-degraissage-de-hotte">Nettoyage et Dégraissage de hotte</a></li>
-          <li><a class="" href="especes-protegees">Espèces protégées</a></li>-->
                       </ul>
                     </li>
 
@@ -226,13 +218,6 @@
                           </ul>
 
                         </li>
-                        <!--  <li><a class="" href="deratisation">Dératisation</a></li>
-          <li><a class="" href="deratisation-paris">Dératisation à paris</a></li>
-          <li><a class="" href="desinfection">Désinfection</a></li>
-          <li><a class="" href="depigeonnisation">Dépigeonnisation</a></li>
-          <li><a class="" href="vmc">Entretien VMC</a></li>
-          <li><a class="" href="nettoyage-et-degraissage-de-hotte">Nettoyage et Dégraissage de hotte</a></li>
-          <li><a class="" href="especes-protegees">Espèces protégées</a></li>-->
                       </ul>
                     </li>
 
@@ -301,7 +286,237 @@
       }
     });
   });
+</script> -->
+
+<header>
+  <div class="menu-wrapper">
+    <div id="menu">
+      <div class="container-fluid">
+        <div class="row flex-middle main-row">
+          <!-- Logo -->
+          <div class="col-sm-12 col-md-2 col-xs-6 logo-col">
+            <a href="./index.html">
+              <div id="logo">
+                <img src="./assets/img/logo.png" class="img-responsive inline-block" alt="logo 123 nuisibles">
+              </div>
+            </a>
+          </div>
+
+          <!-- Navigation and Mobile Menu -->
+          <div class="col-sm-9 col-md-8 col-xs-6 nav-col">
+            <div class="hidden-xs hidden-sm desktop-nav">
+              <nav>
+                <div>
+                  <ul class="menu-top">
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Nos services<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown sbmenu">
+                          <a href="#">Désinsectisation <b class="caret1"></b></a>
+                          <ul class="dropdown-menu" role="menu" style="margin-left: -10px !important;">
+                            <li class="dropdown">
+                              <ul class="sub-menu" role="menu">
+                                <li><a href="./frelons-guepes.html">Frelons/guêpes</a></li>
+                                <li><a href="./chenilles-processionnaires.html">Chenilles processionnaires</a></li>
+                                <li><a href="./punaises-de-lit.html">Punaises de lit</a></li>
+                                <li><a href="./puces.html">Puces</a></li>
+                                <li><a href="./blattes-cafard.html">Cafard-mites</a></li>
+                                <li><a href="./fourmis.html">Fourmis</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="dropdown sbmenu">
+                          <a href="#">Dératisation <b class="caret1"></b></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown">
+                              <ul class="sub-menu sub-menu2" role="menu">
+                                <li><a href="./rats-souris.html">Rats/souris</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="./nos-realisation.html">Galerie</a></li>
+                    <li><a href="./zone.html">Zones d'intervention</a></li>
+                    <li><a href="./devis.html">Devis</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="text-right">
+              <div class="menu-icon" onclick="document.getElementById('menu-mobile').classList.toggle('active')"></div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="menu-mobile">
+              <nav>
+                <div>
+                  <ul class="menu-top">
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Nos services<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown sbmenu">
+                          <a href="#">Désinsectisation <b class="caret1"></b></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown">
+                              <ul class="sub-menu" role="menu">
+                                <li><a href="./frelons-guepes.html">Frelons/guêpes</a></li>
+                                <li><a href="./chenilles-processionnaires.html">Chenilles processionnaires</a></li>
+                                <li><a href="./punaises-de-lit.html">Punaises de lit</a></li>
+                                <li><a href="./puces.html">Puces</a></li>
+                                <li><a href="./blattes-cafard.html">Cafard-mites</a></li>
+                                <li><a href="./fourmis.html">Fourmis</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="dropdown sbmenu">
+                          <a href="#">Dératisation <b class="caret1"></b></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown">
+                              <ul class="sub-menu" role="menu">
+                                <li><a href="./rats-souris.html">Rats/souris</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="./nos-realisation.html">Galerie</a></li>
+                    <li><a href="./zone.html">Zones d'intervention</a></li>
+                    <li><a href="./devis.html">Devis</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="separator"></div>
+
+              <div class="contact-info">
+                <span class="icon-1"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <div class="text">
+                  <h3>Adresse</h3>
+                  <p>16 hameau les érables 91770 Saint Vrain</p>
+                </div>
+              </div>
+
+              <div class="contact-info">
+                <span class="icon-1"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                <div class="text">
+                  <h3>Contact</h3>
+                  <p><a href="tel:0660658811">06 60 65 88 11</a></p>
+                  <p><a href="mailto:franckmdp@yahoo.fr">franckmdp@yahoo.fr</a></p>
+                </div>
+              </div>
+
+              <div class="contact-info">
+                <span class="icon-1"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                <div class="text">
+                  <h3>Horaires</h3>
+                  <p>7h - 21h</p>
+                  <p>7j / 7j</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phone Button -->
+          <div class="col-md-2 visible-md visible-lg text-right phone-col">
+            <a href="tel:0660658811" class="cta3 button1">
+              <span class="txt" style="color: black; white-space: nowrap;">06 60 65 88 11</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Script for Active Link -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll("nav ul.menu-top li a");
+    navLinks.forEach(link => {
+      const linkPath = link.getAttribute("href").replace("./", "");
+      if (linkPath === currentPath) link.classList.add("active");
+      else link.classList.remove("active");
+    });
+  });
 </script>
+
+<!-- Responsive Layout CSS -->
+<style>
+  @media (max-width: 1300px) and (min-width: 991px) {
+    .main-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo-col {
+      order: 1;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .nav-col {
+      order: 2;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-col .desktop-nav {
+      flex: 1;
+      text-align: left;
+    }
+
+    .nav-col nav ul.menu-top {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .phone-col {
+      position: absolute;
+      right: 30px;
+      top: auto;
+    }
+  }
+
+  @media (max-width: 990px) {
+    .main-row {
+      flex-direction: row;
+    }
+
+    .logo-col {
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    .nav-col {
+      display: block;
+    }
+
+    .phone-col {
+      position: static;
+    }
+  }
+</style>
 
 
   
@@ -354,7 +569,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-6 text-left">
-        <img src="./assets/img/logo.png" class="img-responsive footer-logo" alt="logo 123 nuisibles">
+        <img src="/assets/img/logo.png" class="img-responsive footer-logo" alt="logo 123 nuisibles">
         <br><br>
         <ul class="social contact-wrapper">
           <li><a href="https://www.facebook.com/123Nuisibles/" target="_blank"
